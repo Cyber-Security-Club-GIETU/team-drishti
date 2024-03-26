@@ -10,3 +10,4 @@
 | Level | Time Taken | Commands Used |   Date   | Difficulty | Note | 
 | ----- | ---------- | ------------- | -------- | ---------- | ---- | 
 | 0     | 2m         |  2            | 25/03/24 |    Easy    | * is used to select all the possible input | 
+| 0-1     | 2m         |  3            | 25/03/24 |    Easy    | ./ is used for relative path | 
