@@ -9,4 +9,6 @@
 
 | Level | Time Taken | Commands Used |   Date   | Difficulty | Note | 
 | ----- | ---------- | ------------- | -------- | ---------- | ---- | 
-| 0     | 2m         |  2            | 25/03/24 |    Easy    | * is used to select all the possible input | 
+| 0     | 1.45s      | ssh           | 27/03/24 |    Easy    | * is used to select all the possible input | 
+! 0-1   | 1m         | ls,cat        | 28/03/24 |    Easy    |      |
+| 1-2   | 2m         | ssh,ls,cat    | 28/03/24 |    Easy    | cat < - and ./- command will give you the output of -(Dash) file |
