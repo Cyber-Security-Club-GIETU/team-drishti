@@ -21,7 +21,7 @@ Approach: Connect to the remote system via ssh using the given credentials.
 ssh bandit0@bandit.labs.overthewire.org -p 2220
 ```
 
-# Level 0 -> 1
+# Level 0 - 1
 
 Problem Statement: Read file
 
@@ -39,7 +39,7 @@ cat readme
 
 Password for Level 1: `NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL`
 
-# Level 1 -> 2
+# Level 1 - 2
 
 Problem Statement: Read dash files
 
