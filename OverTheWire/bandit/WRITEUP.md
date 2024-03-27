@@ -28,8 +28,7 @@ ls
 cat readme
 ```
 
-Password for:
-Level 1: `NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL`
+Password for Level 1: `NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL`
 
 # Level 1 -> 2
 
@@ -48,5 +47,4 @@ ssh bandit1@bandit.labs.overthewire.org -p 2220
 cat ./-
 ```
 
-Password for:
-Level 2: `rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi`
+Password for Level 2: `rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi`
