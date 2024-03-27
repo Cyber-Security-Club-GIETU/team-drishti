@@ -1,3 +1,12 @@
+# WRITEUP
+
+Certainly! Here's an explanation of each column in the table:
+
+1. **Command**: name of the command
+2. **Input**: input required for the command.
+3. **Description**: provide a brief description of what the command does or its purpose.
+4. **Syntax**: syntax or usage of the command.
+
 # Level 0
 
 Problem Statement: Initiate bandit challenge
@@ -14,7 +23,7 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 
 # Level 0 -> 1
 
-Problem Statement: Read readme file
+Problem Statement: Read file
 
 | Command | Input               | Description                        | Syntax      |
 | ------- | ------------------- | ---------------------------------- | ----------- |

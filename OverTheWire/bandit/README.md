@@ -9,6 +9,8 @@
 5. **Difficulty**: Easy/Medium/Hard/Ultra
 6. **Note**: side notes to refer
 
-| Level | Time Taken | Commands Used | Date     | Difficulty | Note                                        |
-| ----- | ---------- | ------------- | -------- | ---------- | ------------------------------------------- |
-| 0     | 2m         | 2             | 25/03/24 | Easy       | \* is used to select all the possible input |
+| Level | Time Taken | Commands Used | Date     | Difficulty | Note                         |
+| ----- | ---------- | ------------- | -------- | ---------- | ---------------------------- |
+| 0     | 1m         | 1             | 27/03/24 | Easy       | -p is used to set port (ssh) |
+| 0-1   | 15s        | 2             | 27/03/24 | Easy       |                              |
+| 1-2   | 15s        | 2             | 27/03/24 | Easy       | ./ is used for relative path |
