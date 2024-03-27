@@ -1,7 +1,5 @@
 # README Structure
 
-## NIKHIL NAIK 2
-
 ## Progress tracker
 
 1. **Level**: current level you're solving
