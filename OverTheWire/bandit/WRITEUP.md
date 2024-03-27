@@ -31,12 +31,11 @@ Problem Statement: Read the readme file , present in home directory of level0
 | ls      | directory(Optional) |  lists directory contents  | 'ls [option] [file/directory]' |
 | cat     | file or files|  output the content of file or files | 'cat [file/files]'|
 
-Approach: I am already in the home directory (~) of Level 0.
-To list all the contents of the current directory, use the ls command:
-ls
+Approach: I already in the home directory (~) of Level 0.
+To list all the contents of the current directory, used the 'ls' command.
 
-Next, let’s output the content of the readme file using the cat command:
-cat readme
+Next, let’s output the content of the readme file using the 'cat' command.
+
 
 The password for the next level is stored in this file. 🚀 
 
@@ -62,10 +61,9 @@ Problem Statement: Read the -(Dash) file , which content the password for level 
 | cat     | file or files|  output the content of file or files | 'cat [option] [file/files]'|
 
 Approach: using ssh and necessary credentials(found on previous lab ), I connected to the remote server of BanditLab and entered in the home directory (~) of Level 1.
-To list all the contents of the current directory, use the ls command:
-ls
+To list all the contents of the current directory, I used the 'ls' command.
 
-Next, let’s output the content of the -(dash) file using the cat command :
+Next, for output the content of the -(dash) file, I used the 'cat' command :
 cat < -
 
 The password for the next level is stored in this file. 🚀 
