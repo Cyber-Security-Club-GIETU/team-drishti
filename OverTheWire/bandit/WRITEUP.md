@@ -1,6 +1,6 @@
 # WRITEUP Format
 
-# Level Number
+# Level number
 
 Problem Statement: Details
 
@@ -29,3 +29,42 @@ cat *
 
 ### Password for next level
 Level 1: `NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL`
+
+#Lets Start the Game !
+
+# Leve0 
+
+Problem Statement: Log in to the game using ssh 
+
+| Command | Input | Description | Syntax |
+| ------- | ----- | ----------- | ------ |
+| ssh     | username<br>password<br>ip & port | connect securely to remote machine and get shell access | `ssh username@host -p PORT` |
+
+Approach: I've found that I'll need to link up with a remote server managed by BanditLab. To make this connection, I'll be utilizing the SSH protocol, and I've got all the required credentials right here. Everything's in place, so we're ready to move forward smoothly without any obstacles. 🚀
+
+
+### Commands Used
+```Bash
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+```
+
+# Leve0-1
+
+Problem Statement: Locate and find the password present in the readme file , present in home directory of level 0
+
+| Command | Input | Description | Syntax |
+| ------- | ----- | ----------- | ------ |
+| ls      | directory(Optional) |  lists directory contents  | 'ls [file/directory]' |
+| cat     | file or files|  gives the content of the file or files | 'cat [file/files]'|
+
+Approach: I'm currently in the home directory (~) of Level 0.
+To see what's in this directory, I'll use the 'ls' command.
+Now, let's display the contents of the readme file by using the 'cat' command.
+The password for the next level is kept in this file. 
+
+
+### Commands Used
+```Bash
+ls 
+cat readme
+```
