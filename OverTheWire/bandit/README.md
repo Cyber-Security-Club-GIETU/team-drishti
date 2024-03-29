@@ -10,5 +10,5 @@
 | Level | Time Taken | Commands Used |   Date   | Difficulty | Note | 
 | ----- | ---------- | ------------- | -------- | ---------- | ---- | 
 | 0     | 1m      | ssh           | 26/03/24 |    Easy    | * is used to select all the possible input | 
-| 0-1   | 1.5m         | ls,cat        | 27/03/24 |    Easy    |      |
+| 0-1   | 1.5m         | ls,cat        | 27/03/24 |    Easy    |     |
 | 1-2   | 2m         | ssh,ls,cat    | 28/03/24 |    Easy    | using the cat coomand with dash(-) we will get the output |
