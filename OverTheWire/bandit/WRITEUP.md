@@ -68,3 +68,33 @@ The password for the next level is kept in this file.
 ls 
 cat readme
 ```
+### Password for next level
+Level 1:  `NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL`
+
+# Leve1-2
+
+Problem Statement: Read the -(Dash) file , which content the password for level 2
+
+| Command | Input | Description | Syntax |
+| ------- | ----- | ----------- | ------ |
+| ssh     | username<br>password<br>ip & port | connect securely to remote machine and get shell access | `ssh username@host -p PORT` |
+| ls      | directory(Optional) |  lists directory contents  | 'ls [option] [file/directory]' |
+| cat     | file or files|  output the content of file or files | 'cat [option] [file/files]'|
+
+Approach: I logged into the BanditLab1 server using SSH and the provided credentials, then navigated to Level 1's home directory. To see what's in the directory, I typed 'ls'.
+
+Next, for output the content of the -(dash) file, I used the 'cat' command :
+cat < -
+
+The password for the next level is stored in this file. 🚀 
+
+
+### Commands Used
+```Bash
+ssh bandit1@bandit.labs.overthewire.org -p 2220
+ls 
+cat < -
+```
+
+### Password for next level
+Level 2: `rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi`
