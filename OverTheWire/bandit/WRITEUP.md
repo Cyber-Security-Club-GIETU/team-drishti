@@ -93,7 +93,7 @@ The password for the next level is stored in this file. 🚀
 ```Bash
 ssh bandit1@bandit.labs.overthewire.org -p 2220
 ls 
-cat < -
+cat < - or cat ./-
 ```
 
 ### Password for next level
