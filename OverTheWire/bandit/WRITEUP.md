@@ -95,7 +95,7 @@ Approach: using ssh and necessary credentials(found on previous lab ), I connect
 To list all the contents of the current directory, I used the 'ls' command. 
 
 Next, for output the content of the file which have spaces on it's file name, I used the 'cat' command with following syntax:
-cat 'file name etc'
+cat 'file name with spaces as given'
 
 The password for the next level is stored in this file. 🚀 
 
