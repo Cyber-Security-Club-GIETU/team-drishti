@@ -97,4 +97,4 @@ cat < - or cat ./-
 ```
 
 ### Password for next level
-Level 2: rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi
+Level 2: `rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi`
