@@ -78,3 +78,35 @@ cat < -
 
 ### Password for next level
 Level 2: `rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi`
+
+
+
+# Level2-3
+
+Problem Statement: Read a file , which have spaces in it's file name.
+
+| Command | Input | Description | Syntax |
+| ------- | ----- | ----------- | ------ |
+| ssh     | username<br>password<br>ip & port | connect securely to remote machine and get shell access | `ssh username@host -p PORT` |
+| ls      | directory(Optional) |  lists directory contents  | 'ls [option] [file/directory]' |
+| cat     | file or files |  output the content of file or files | ' cat [option] [file/files] '|
+
+Approach: using ssh and necessary credentials(found on previous lab ), I connected to the remote server of BanditLab and entered in the home directory (~) of Level 2.
+To list all the contents of the current directory, I used the 'ls' command. 
+
+Next, for output the content of the file which have spaces on it's file name, I used the 'cat' command with following syntax:
+cat 'file name etc'
+
+The password for the next level is stored in this file. 🚀 
+
+
+### Commands Used
+```Bash
+ssh bandit2@bandit.labs.overthewire.org -p 2220
+ls 
+cat 'spaces in this filename'
+```
+
+### Password for next level
+Level 3: `aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG`
+
