@@ -15,4 +15,4 @@
 |2-3    |1m          |ssh,ls,cat     | 31/03/24 | Easy | \ is used in space filename before every word to find the content |
 |3-4   | 3m |  ssh,ls,cd,cat  |31/03/24|Easy|The hidden file are identified by . ,means name starts with .|
 |4-5 |5m| ssh,ls,cd,cat |31/03/24|easy |there are many dashed file so use cat ./-filename|
-|5-6 |4m  |ssh,ls,cd,find,cat|31/03/24|easy |find command command is used to find file according to the properties of file |
+|5-6 |4m  |ssh,ls,cd,find,cat|31/03/24|easy |find command is used to find file according to the properties of file |
