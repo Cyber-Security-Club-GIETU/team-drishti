@@ -57,3 +57,75 @@ cat ./-
 ```
 
 Password for Level 2: `rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi`
+
+# Level 2 - 3
+
+Problem Statement: Read dash files
+
+| Command | Input                             | Description                                             | Syntax                      |
+| ------- | --------------------------------- | ------------------------------------------------------- | --------------------------- |
+| ssh     | username<br>password<br>ip & port | connect securely to remote machine and get shell access | `ssh username@host -p PORT` |
+| cat     | file/files                        | output content of a file or files                       | `cat $FILE`                 |
+| ls      | directory(optional)               | lists the content of the directory                      | `ls $PATH`                  |
+
+Approach: Use `ls` to list all the files in the current directory. Since the file name contains spaces , we need to enclose it with single/double quotes `cat "file name with spaces"`. Another way is to escape every space with backslash `cat file\ name\ with\ spaces`
+
+```Bash
+ssh bandit2@bandit.labs.overthewire.org -p 2220
+ls
+cat "spaces in this filename"
+```
+
+OR
+
+```Bash
+cat spaces\ in\ this\ filename
+```
+
+Password for Level 3: `aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG`
+
+# Level 3 - 4
+
+Problem Statement: Read hidden file
+
+| Command | Input                             | Description                                             | Syntax                      |
+| ------- | --------------------------------- | ------------------------------------------------------- | --------------------------- |
+| ssh     | username<br>password<br>ip & port | connect securely to remote machine and get shell access | `ssh username@host -p PORT` |
+| cat     | file/files                        | output content of a file or files                       | `cat $FILE`                 |
+| cd      | directory                         | change the directory                                    | `cd $PATH`                  |
+| ls      | directory(optional)               | lists the content of the directory                      | `ls $PATH`                  |
+
+Approach: Use `cd $PATH` to change the directory. Then use `ls` with `-a` option to display all including hidden files and directories. Then use `cat` to read the file.
+
+```Bash
+ssh bandit3@bandit.labs.overthewire.org -p 2220
+cd inhere
+ls -a
+cat .hidden
+```
+
+Password for Level 4: `2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe`
+
+# Level 4 - 5
+
+Problem Statement: find human readable file
+
+| Command | Input                             | Description                                             | Syntax                      |
+| ------- | --------------------------------- | ------------------------------------------------------- | --------------------------- |
+| ssh     | username<br>password<br>ip & port | connect securely to remote machine and get shell access | `ssh username@host -p PORT` |
+| cat     | file/files                        | output content of a file or files                       | `cat $FILE`                 |
+| cd      | directory                         | change the directory                                    | `cd $PATH`                  |
+| ls      | directory(optional)               | lists the content of the directory                      | `ls $PATH`                  |
+| file    | file                              | return the file type                                    | `file $FILE`                |
+
+Approach: Use `cd $PATH` to change the directory. Then use `find *` to list the file type of all the files
+
+```Bash
+ssh bandit4@bandit.labs.overthewire.org -p 2220
+cd inhere
+ls -a
+file *
+cat ./-file07
+```
+
+Password for Level 5: `lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR`
