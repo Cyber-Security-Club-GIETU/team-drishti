@@ -127,13 +127,13 @@ Level 3: `aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG`
 
 # Level 3-4
 
-Problem Statement: Find the password stored in a file called `spaces in this filename` located in the home directory
+Problem Statement: Find the password for the next level that stored in a hidden file in the inhere directory
 
 | Command | Input | Description | Syntax |
 | ------- | ----- | ----------- | ------ |
 | ssh     | username<br>password<br>ip & port | connect securely to remote machine and get shell access | `ssh username@host -p PORT` |
 | ls      | directory(Optional) |  lists directory contents  | 'ls [option] [file/directory]' |
-|cd       |directory           | change directory |cd directory name|
+|cd       |directory           | change directory |cd <directoryname>|
 | cat     | file or files|  output the content of file or files | 'cat [option] [file/files]'|
 
 Approach: I logged into the BanditLab3 server using SSH and the provided credentials, then navigated to  home directory. To see what's in the directory, I typed 'ls'.
@@ -156,4 +156,78 @@ cat .hidden
 ```
 
 ### Password for next level
-Level 3: `2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe`
+Level 4: `2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe`
+
+# Level 4-5
+
+Problem Statement: Find the password for the next level that stored in the only human-readable file in the inhere directory
+
+| Command | Input | Description | Syntax |
+| ------- | ----- | ----------- | ------ |
+| ssh     | username<br>password<br>ip & port | connect securely to remote machine and get shell access | `ssh username@host -p PORT` |
+| ls      | directory(Optional) |  lists directory contents  | 'ls [option] [file/directory]' |
+|cd       |directory           | change directory |cd <directoryname>|
+| cat     | file or files|  output the content of file or files | 'cat [option] [file/files]'|
+
+Approach: I logged into the BanditLab4 server using SSH and the provided credentials, then navigated to  home directory. To see what's in the directory, I typed 'ls'.
+Next,then as per the instruction i go to the inhere directory
+cd inhere
+Then i list the content of the directory including hidden 
+ls -a
+,after that to find the output from  files I used the 'cat' command at got the password at :
+cat ./-file07
+The password for the next level is stored in this file. 🚀 
+
+
+### Commands Used
+```Bash
+ssh bandit4@bandit.labs.overthewire.org -p 2220
+ls
+cd inhere
+ls -a
+cat ./-file07
+```
+
+### Password for next level
+Level 5: `lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR`
+
+# Level 5-6
+
+Problem Statement: Find the password for the next level that stored somewhere under the inhere directory in a file which properties are human-readable,
+1033 bytes in size,
+not executable.
+
+| Command | Input | Description | Syntax |
+| ------- | ----- | ----------- | ------ |
+| ssh     | username<br>password<br>ip & port | connect securely to remote machine and get shell access | `ssh username@host -p PORT` |
+| ls      | directory(Optional) |  lists directory contents  | 'ls [option] [file/directory]' |
+|cd       |directory           | change directory |cd <directoryname>|
+|find     |   |         |find [path] [options] [expression]|
+| cat     | file or files|  output the content of file or files | 'cat [option] [file/files]'|
+
+Approach: I logged into the BanditLab5 server using SSH and the provided credentials, then navigated to  home directory. To see what's in the directory, I typed 'ls'.
+Next,then as per the instruction i go to the inhere directory
+cd inhere
+Then i list the content of the directory including hidden 
+ls -a
+,after that to find the file as per the given properties i used the find command
+find . -size 1033c ! -executable.
+output from  files I used the 'cat' command at got the password at :
+cat ./-file07
+The password for the next level is stored in this file. 🚀 
+
+
+### Commands Used
+```Bash
+ssh bandit5@bandit.labs.overthewire.org -p 2220
+ls
+cd inhere
+ls -a
+find . -size 1033c ! -executable
+cat ./-
+```
+
+### Password for next level
+Level 6: `P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU`
+
+
