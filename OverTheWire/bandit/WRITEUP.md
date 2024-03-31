@@ -124,3 +124,36 @@ cat spaces\ in\ this\ filename
 
 ### Password for next level
 Level 3: `aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG`
+
+# Level 3-4
+
+Problem Statement: Find the password stored in a file called `spaces in this filename` located in the home directory
+
+| Command | Input | Description | Syntax |
+| ------- | ----- | ----------- | ------ |
+| ssh     | username<br>password<br>ip & port | connect securely to remote machine and get shell access | `ssh username@host -p PORT` |
+| ls      | directory(Optional) |  lists directory contents  | 'ls [option] [file/directory]' |
+|cd       |directory           | change directory |cd directory name|
+| cat     | file or files|  output the content of file or files | 'cat [option] [file/files]'|
+
+Approach: I logged into the BanditLab3 server using SSH and the provided credentials, then navigated to  home directory. To see what's in the directory, I typed 'ls'.
+Next,then as per the instruction i go to the inhere directory
+cd inhere
+Then i list the content of the directory including hidden 
+ls -a
+,after that to find the output from .hidden file I used the 'cat' command :
+cat .hidden
+The password for the next level is stored in this file. 🚀 
+
+
+### Commands Used
+```Bash
+ssh bandit3@bandit.labs.overthewire.org -p 2220
+ls
+cd inhere
+ls -a
+cat .hidden
+```
+
+### Password for next level
+Level 3: `2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe`
