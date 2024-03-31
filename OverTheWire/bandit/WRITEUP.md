@@ -71,7 +71,7 @@ cat readme
 ### Password for next level
 Level 1:  `NH2SXQwcBdpmTEzi3bvBHMM9H66vVXjL`
 
-# Leve1-2
+# Leve1 1-2
 
 Problem Statement: Read the -(Dash) file , which content the password for level 2
 
@@ -98,3 +98,29 @@ cat < - or cat ./-
 
 ### Password for next level
 Level 2: `rRGizSaX8Mk1RTb1CNQoXTcYZWU6lgzi`
+
+# Level 2-3
+
+Problem Statement: Find the password stored in a file called `spaces in this filename` located in the home directory
+
+| Command | Input | Description | Syntax |
+| ------- | ----- | ----------- | ------ |
+| ssh     | username<br>password<br>ip & port | connect securely to remote machine and get shell access | `ssh username@host -p PORT` |
+| ls      | directory(Optional) |  lists directory contents  | 'ls [option] [file/directory]' |
+| cat     | file or files|  output the content of file or files | 'cat [option] [file/files]'|
+
+Approach: I logged into the BanditLab2 server using SSH and the provided credentials, then navigated to  home directory. To see what's in the directory, I typed 'ls'.
+Next, for output the content of the spaces in tis filename file, I used the 'cat' command :
+cat spaces\ in\ this\ filename
+The password for the next level is stored in this file. 🚀 
+
+
+### Commands Used
+```Bash
+ssh bandit2@bandit.labs.overthewire.org -p 2220
+ls 
+cat spaces\ in\ this\ filename
+```
+
+### Password for next level
+Level 3: `aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG`
