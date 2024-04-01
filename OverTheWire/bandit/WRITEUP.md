@@ -111,3 +111,32 @@ cat 'spaces in this filename'
 ### Password for next level
 Level 3: `aBZ0W5EmUfAf7kHTQeOwd8bauFJ2lAiG`
 
+
+# Level3-4
+Problem Statement:Read a hidden file
+
+| Command | Input | Description | Syntax |
+| ------- | ----- | ----------- | ------ |
+| ssh     | username<br>password<br>ip & port | connect securely to remote machine and get shell access | `ssh username@host -p PORT` | 
+| ls      | directory(Optional) |  lists directory contents  | 'ls [option] [file/directory]' |
+| cd      | directory      | change directory | 'cd [option] [directory]' |  
+| cat     | file or files |  output the content of file or files | ' cat [option] [file/files] '|
+
+Approach: 
+Using SSH and the necessary credentials obtained from the previous lab, I connected to the remote server of BanditLab and entered the home directory (~) of Level 3. Upon listing all the contents of the current directory using the 'ls' command, I used the 'cd' command to enter the 'inhere' directory. In the inhere directory, I employed the 'ls' command with the '-a' option to identify all types of files present in this particular directory. Here, I discovered a hidden file named '.hidden'.
+
+To retrieve the contents of the '.hidden' file, I utilized the 'cat' command.
+
+The password for the next level is stored in this file. 🚀
+
+### Commands Used
+```Bash
+ssh bandit2@bandit.labs.overthewire.org -p 2220
+cd inhere
+ls -a
+cat .hidden
+```
+
+### Password for next level
+Level 4: `2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe`
+

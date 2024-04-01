@@ -12,4 +12,5 @@
 | 0     | 1.45s      | ssh           | 27/03/24 |    Easy    | * is used to select all the possible input | 
 | 0-1   | 1m         | ls,cat        | 28/03/24 |    Easy    |      |
 | 1-2   | 2m         | ssh,ls,cat    | 28/03/24 |    Easy    | cat < - and ./- command will give you the output of -(Dash) file |
-| 2-3   | 5m         |ssh,ls,cat     | 30/03/24 |    Easy    | cat 'File name with spaces as given', for showing the output of a file which have spaces in it's file name.
+| 2-3   | 5m         |ssh,ls,cat     | 30/03/24 |    Easy    | cat 'File name with spaces as given', for showing the output of a file which have spaces in it's file name.|
+| 3-4   | 5m         |ssh,cd,ls.cat  | 01/04/24 |    Easy    | cat .FileName command will give you out of any hidden file whose name start with dot(.) |
