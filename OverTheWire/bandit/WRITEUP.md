@@ -202,7 +202,7 @@ not executable.
 | ssh     | username<br>password<br>ip & port | connect securely to remote machine and get shell access | `ssh username@host -p PORT` |
 | ls      | directory(Optional) |  lists directory contents  | 'ls [option] [file/directory]' |
 |cd       |directory           | change directory |cd <directoryname>|
-|find     |   |         |find [path] [options] [expression]|
+|find     |   |  searches directories for files and directories that match the specified criteria|find [path] [options] [expression]|
 | cat     | file or files|  output the content of file or files | 'cat [option] [file/files]'|
 
 Approach: I logged into the BanditLab5 server using SSH and the provided credentials, then navigated to  home directory. To see what's in the directory, I typed 'ls'.
@@ -211,9 +211,10 @@ cd inhere
 Then i list the content of the directory including hidden 
 ls -a
 ,after that to find the file as per the given properties i used the find command
-find . -size 1033c ! -executable.
-output from  files I used the 'cat' command at got the password at :
-cat ./-file07
+find . -size 1033c ! -executable. 
+after that i got a path to find the password for next level.
+To find output from  files I used the 'cat' command at got the password at :
+cat ./maybehere07/.file2
 The password for the next level is stored in this file. 🚀 
 
 
@@ -224,8 +225,7 @@ ls
 cd inhere
 ls -a
 find . -size 1033c ! -executable
-cat ./-
-```
+cat ./maybehere07/.file2
 
 ### Password for next level
 Level 6: `P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU`
