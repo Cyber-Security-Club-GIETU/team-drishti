@@ -131,7 +131,7 @@ The password for the next level is stored in this file. 🚀
 
 ### Commands Used
 ```Bash
-ssh bandit2@bandit.labs.overthewire.org -p 2220
+ssh bandit3@bandit.labs.overthewire.org -p 2220
 cd inhere
 ls -a
 cat .hidden
@@ -139,4 +139,36 @@ cat .hidden
 
 ### Password for next level
 Level 4: `2EW7BBsr6aMMoJ2HjW067dm8EgX26xNe`
+
+
+
+# Level4-5
+Problem Statement:Read a human readable file
+
+| Command | Input | Description | Syntax |
+| ------- | ----- | ----------- | ------ |
+| ssh     | username<br>password<br>ip & port | connect securely to remote machine and get shell access | `ssh username@host -p PORT` | 
+| ls      | directory(Optional) |  lists directory contents  | 'ls [option] [file/directory]' |
+| cd      | directory      | change directory | 'cd [option] [directory]' |  
+| cat     | file or files |  output the content of file or files | ' cat [option] [file/files] '|
+| file    | file or files |  for recognizing the type of data contained | 'file [option] [file/files]' |
+
+Approach: Using SSH and the necessary credentials obtained from the previous lab, I connected to the remote server of BanditLab and entered the home directory (~) of Level 4. Upon listing all the contents of the current directory using the 'ls' command, I used the 'cd' command to enter the 'inhere' directory. In the inhere directory, I employed the 'ls' command with the '-a' option to identify all types of files present in this particular directory. Here, I discovered many dash(-) files.
+Then I used 'file' command with required option for finding out the type of data contained in these file. Then i found a  human readable file(contained ASCII text) '-file07' .
+
+To retrieve the contents of the '-file07' file, I utilized the 'cat' command.
+
+The password for the next level is stored in this file. 🚀
+
+
+### Commands Used
+```Bash
+ssh bandit4@bandit.labs.overthewire.org -p 2220
+cd inhere
+ls -a
+cat ./-file07
+```
+
+### Password for next level
+Level 5: `lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR`
 
