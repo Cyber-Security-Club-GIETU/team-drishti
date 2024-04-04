@@ -15,3 +15,4 @@
 | 2-3   | 5m         |ssh,ls,cat     | 30/03/24 |    Easy    | cat 'File name with spaces as given', for showing the output of a file which have spaces in it's file name.|
 | 3-4   | 5m         |ssh,cd,ls.cat  | 01/04/24 |    Easy    | cat .FileName command will give you output of any hidden file whose name start with dot(.) |
 | 4-5  | 3m      | ssh,cd,ls,file,cat| 03/04/24 |    Easy    | file ./-File_Name will give you the type of data contained in perticular dash(-) file|
+| 5-6  | 4m      | ssh,cd,ls,find,cat | 04/04/24 |   Easy(a little tricky) | find , use for searching for files based on diverse criteria and one of the time saving command |

@@ -172,3 +172,37 @@ cat ./-file07
 ### Password for next level
 Level 5: `lrIWWI6bB37kxfiCQZqUdOIYfr6eEeqR`
 
+
+# Level5-6
+Problem Statement: Search and read a file , which have following properties : <br>
+human-readable<br>
+1033 bytes in size<br>
+not executable
+
+| Command | Input | Description | Syntax |
+| ------- | ----- | ----------- | ------ |
+| ssh     | username<br>password<br>ip & port | connect securely to remote machine and get shell access | `ssh username@host -p PORT` | 
+| ls      | directory(Optional) |  lists directory contents  | 'ls [option] [file/directory]' |
+| cd      | directory     | change directory | 'cd [option] [directory]' |
+| find    | path          | searching for files based on diverse criteria| 'find [path] [options] [expression]'|
+| cat     | file or files |  output the content of file or files | ' cat [option] [file/files] '|
+
+Approach: Using SSH and the necessary credentials obtained from the previous lab, I connected to the remote server of BanditLab and entered the home directory (~) of Level 5. Upon listing all the contents of the current directory using the 'ls' command, I used the 'cd' command to enter the 'inhere' directory. In the inhere directory, I employed the 'ls' command with the '-a' option to list out all types of files present in this particular directory. Here, I discovered many some hidden files and many different type of directory .
+Then I used 'find' command with required option for finding out the perticluar type of file as per the problem statement. Then i found a file with desired propertie which was present in the './maybehere07/.file2' .
+
+To retrieve the contents of the '.file2' file, I utilized the 'cat' command.
+
+The password for the next level is stored in this file. 🚀
+
+
+### Commands Used
+```Bash
+ssh bandit4@bandit.labs.overthewire.org -p 2220
+cd inhere
+ls
+find . -type f -size 1033c ! -executable
+cat ./maybehere07/.file2
+```
+
+### Password for next level
+Level 6: `P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU`
