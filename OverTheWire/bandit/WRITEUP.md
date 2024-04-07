@@ -197,7 +197,7 @@ The password for the next level is stored in this file. 🚀
 
 ### Commands Used
 ```Bash
-ssh bandit4@bandit.labs.overthewire.org -p 2220
+ssh bandit5@bandit.labs.overthewire.org -p 2220
 cd inhere
 ls
 find . -type f -size 1033c ! -executable
@@ -206,3 +206,37 @@ cat ./maybehere07/.file2
 
 ### Password for next level
 Level 6: `P4L4vucdmLnm8I7Vl7jG1ApGSfjYKqJU`
+
+
+# Level6-7
+Problem Statement: Search and read a file , which have following properties : <br>
+owned by user bandit7<br>
+owned by group bandit6<br>
+33 bytes in size<br>
+
+| Command | Input | Description | Syntax |
+| ------- | ----- | ----------- | ------ |
+| ssh     | username<br>password<br>ip & port | connect securely to remote machine and get shell access | `ssh username@host -p PORT` | 
+| ls      | directory(Optional) |  lists directory contents  | 'ls [option] [file/directory]' |
+| cd      | directory     | change directory | 'cd [option] [directory]' |
+| find    | path          | searching for files based on diverse criteria| 'find [path] [options] [expression]'|
+| cat     | file or files |  output the content of file or files | ' cat [option] [file/files] '|
+
+Approach: Using SSH and the necessary credentials obtained from the previous lab, I connected to the remote server of BanditLab and entered the home directory (~) of Level 6. Then I used 'find' command with required option for finding out the perticluar type of file as per the problem statement. Then i found a file with desired propertie which was present in the '/var/lib/dpkg/info/bandit7.password' .
+
+To retrieve the contents of the '.password' file, I utilized the 'cat' command.
+
+The password for the next level is stored in this file. 🚀
+
+
+### Commands Used
+```Bash
+ssh bandit6@bandit.labs.overthewire.org -p 2220
+cd inhere
+ls
+find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
+cat /var/lib/dpkg/info/bandit7.password
+```
+
+### Password for next level
+Level 7: `z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S`
