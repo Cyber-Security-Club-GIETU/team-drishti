@@ -240,3 +240,28 @@ cat /var/lib/dpkg/info/bandit7.password
 
 ### Password for next level
 Level 7: `z7WtoNQU2XfjmMtWA8u5rN4vzqu4v99S`
+
+
+# Level7-8
+Problem Statement: The password for the next level is stored in the file data.txt next to the word millionth
+
+| Command | Input | Description | Syntax |
+| ------- | ----- | ----------- | ------ |
+| ssh     | username<br>password<br>ip & port | connect securely to remote machine and get shell access | `ssh username@host -p PORT` | 
+| ls      | directory(Optional) |  lists directory contents  | 'ls [option] [file/directory]' |
+| cat     | file or files |  output the content of file or files | ' cat [option] [file/files] '|
+| grep    | pattern [files] | searching and manipulating text patterns within files | grep [options] pattern [files] | 
+
+
+Approach: Using SSH and the necessary credentials obtained from the previous lab, I connected to the remote server of BanditLab and entered the home directory (~) of Level 7. Then I used 'ls' command and found 'data.txt is right at the home directory. Hence, we don’t have to perform cd. Then i used 'cat data.txt | grep millionth' , for geting the password.🚀
+
+
+### Commands Used
+```Bash
+ssh bandit7@bandit.labs.overthewire.org -p 2220
+ls
+cat data.txt | grep millionth
+```
+
+### Password for next level
+Level 8: `TESKZC0XvTetK0S9xNwm25STk5iWrBvP`

@@ -17,3 +17,4 @@
 | 4-5  | 3m      | ssh,cd,ls,file,cat| 03/04/24 |    Easy    | file ./-File_Name will give you the type of data contained in perticular dash(-) file|
 | 5-6  | 4m      | ssh,cd,ls,find,cat | 04/04/24 |   Easy(a little tricky) | find , use for searching for files based on diverse criteria and one of the time saving command |
 | 6-7  | 4m      | ssh,cd,ls,find,cat | 07/04/24 |   Easy(a little tricky) | find , use for searching for files based on diverse criteria and one of the time saving command |
+| 7-8  | 5m      | ssh,ls,grep     | 08/04/24    |   Medium      | use pipe(|) operator for saving time |
